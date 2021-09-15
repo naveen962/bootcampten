@@ -17,16 +17,18 @@ then
 		echo "head won by:"$leadingwin
 		break
 	fi
-else
+elif [[ $Result == 1 ]]
+then
 echo "Tail"
 tail=$(( $tail + 1 ))
-if [[ $tail == 21 ]]
-   then
-      leadingwin=$(( $tail - $head ))
-      echo "tail won by:"$leadingwin
-      break
+       if [[ $tail == 21 ]]
+       then
+          leadingwin=$(( $tail - $head ))
+          echo "tail won by:"$leadingwin
+          break
 	fi
-
+else
+	echo "Tie"
 fi
 done
 
