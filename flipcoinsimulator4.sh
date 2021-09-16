@@ -26,6 +26,7 @@ tail=$(( $tail + 1 ))
       break
 	fi
 else
-echo "tie"
+
+	echo "Tie"
 fi
 done
