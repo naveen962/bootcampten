@@ -2,6 +2,8 @@
 
 head=0
 tail=0
+functon flip()
+{
 while :
 do
 Result=$((RANDOM%2))
@@ -28,5 +30,8 @@ tail=$(( $tail + 1 ))
 else
 
 	echo "Tie"
+	flip
 fi
 done
+}
+flip
