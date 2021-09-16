@@ -4,6 +4,8 @@ function flip()
 {
 temp1=0
 temp2=0
+temp3=0
+temp4=0
 for (( i=1;i<=10; i++ ))
 do
 Result1=$((RANDOM % 2))
